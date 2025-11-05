@@ -1,0 +1,5 @@
+{
+  "name": "CS Reviewer: Basic Web Dev",
+  "description": "An interactive reviewer for an Introduction to Computing course, focusing on HTML and CSS. Features a live code editor and previewer to practice web development concepts.",
+  "requestFramePermissions": []
+}
