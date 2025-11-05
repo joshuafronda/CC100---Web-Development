@@ -30,13 +30,13 @@ function App() {
     return (
         <div className="min-h-screen bg-gray-50 dark:bg-slate-900 text-gray-800 dark:text-slate-300 font-sans transition-colors duration-300">
             <Header theme={theme} toggleTheme={toggleTheme} />
-            <main className="container mx-auto px-4 py-8">
+            <main className="container mx-auto px-3 sm:px-4 py-6 sm:py-8">
                 <Content sections={reviewerContent} />
             </main>
             
             <button
                 onClick={() => setIsCompilerOpen(true)}
-                className="fixed bottom-6 right-6 lg:bottom-10 lg:right-10 bg-accent hover:bg-blue-500 text-white font-bold py-3 px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out flex items-center space-x-2 z-40"
+                className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 lg:bottom-10 lg:right-10 bg-accent hover:bg-blue-500 text-white font-bold py-2.5 sm:py-3 px-3 sm:px-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out flex items-center space-x-2 z-40 text-sm sm:text-base"
                 aria-label="Open Code Editor"
             >
                 <CodeIcon />

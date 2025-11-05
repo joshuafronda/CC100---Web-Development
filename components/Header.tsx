@@ -21,14 +21,14 @@ const MoonIcon = () => (
 const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
     return (
         <header className="bg-white dark:bg-slate-800 shadow-md sticky top-0 z-30 transition-colors duration-300">
-            <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                <div className="text-center flex-grow">
-                    <h1 className="text-2xl md:text-2xl font-bold text-gray-900 dark:text-white">CC100: Introduction to Computing</h1>
-                    <p className="text-lg text-blue-600 dark:text-info mt-1">Basic Web Development</p>
+            <div className="container mx-auto px-3 sm:px-4 py-3 sm:py-4 flex justify-between items-center gap-2">
+                <div className="text-left sm:text-center flex-grow min-w-0">
+                    <h1 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 dark:text-white truncate">CC100: Introduction to Computing</h1>
+                    <p className="text-sm sm:text-base md:text-lg text-blue-600 dark:text-info mt-1">Basic Web Development</p>
                 </div>
                 <button
                     onClick={toggleTheme}
-                    className="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors"
+                    className="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-slate-700 transition-colors flex-shrink-0"
                     aria-label="Toggle theme"
                 >
                     {theme === 'light' ? <MoonIcon /> : <SunIcon />}
